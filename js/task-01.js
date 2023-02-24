@@ -1,12 +1,12 @@
 const list = document.querySelector('#categories');
 const items = document.querySelectorAll('.item');
 
-const f = items => items.forEach(item => {
-    console.log(`Category: ${item.firstElementChild.textContent}`);
+const elementsCounting = elements => elements.forEach(element => {
+    console.log(`Category: ${element.firstElementChild.textContent}`);
 
-    console.log(`Elements: ${item.lastElementChild.childElementCount}`);
+    console.log(`Elements: ${element.lastElementChild.childElementCount}`);
 });
 
 console.log(`Number of categories: ${items.length}`);
 
-f(items);
+elementsCounting(items);
