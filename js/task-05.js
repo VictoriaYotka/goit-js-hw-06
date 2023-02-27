@@ -1,8 +1,8 @@
 const inputEl = document.querySelector('#name-input');
 const outputEl = document.querySelector('#name-output');
 
-const handlerInputTextToOutput = () => {
-    if(inputEl.value.length === 0 || inputEl.value.trim() === '') {
+const handlerInputTextToOutput = (event) => {
+    if(event.currentTarget.value.length === 0 || event.currentTarget.value.trim() === '') {
 return outputEl.textContent = "Anonymous";
     }
     return outputEl.textContent = inputEl.value.trim();
